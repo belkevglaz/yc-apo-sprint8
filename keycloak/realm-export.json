@@ -116,13 +116,16 @@
         "publicClient": true,
         "redirectUris": ["http://frontend:3000/*", "http://localhost:3000/*", "http://0.0.0.0:3000/*"],
         "webOrigins": ["+"],
-        "directAccessGrantsEnabled": true
+        "directAccessGrantsEnabled": false,
+        "attributes": {
+          "pkce.code.challenge.method": "S256"
+        }
       },
       {
         "clientId": "reports-api",
         "enabled": true,
         "clientAuthenticatorType": "client-secret",
-        "secret": "oNwoLQdvJAvRcL89SydqCWCe5ry1jMgq", 
+        "secret": "oNwoLQdvJAvRcL89SydqCWCe5ry1jMgq",
         "bearerOnly": true
       }
     ]
